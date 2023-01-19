@@ -1,22 +1,14 @@
 ---
 id: 73neeqm706h4yfbgcigd5bv
-title: Root
-desc: ''
-updated: 1673462169246
+title: Software Development Ressources
+desc: ""
+updated: 1674162443326
 created: 1673459298905
 ---
 
+## Welcome to my Notes on Software Development
 
-## Welcome to Dendron
+I am collecting some notes and ressources on different software development topics, sometimes with a summary.
 
-This is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top.
-
-### Lookup
-
-This section contains useful links to related resources.
-
-- [Getting Started Guide](https://link.dendron.so/6b25)
-- [Discord](https://link.dendron.so/6b23)
-- [Home Page](https://wiki.dendron.so/)
-- [Github](https://link.dendron.so/6b24)
-- [Developer Docs](https://docs.dendron.so/)
+If you have feedback, [let me know](https://github.com/realJohnDoe/software-dev-ressources/issues/new/choose)!🙂
+SwsS
