@@ -1,0 +1,224 @@
+{
+  "roots": [
+    {
+      "key": "73neeqm706h4yfbgcigd5bv",
+      "title": "Software Development Ressources",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "software-dev-ressources",
+      "navExclude": false,
+      "children": [
+        {
+          "key": "zpnqg6bt1wcsuyx2moijqza",
+          "title": "Architecture",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "software-dev-ressources",
+          "navExclude": false,
+          "children": [
+            {
+              "key": "323zumeh4yfr8sfe98hxnmi",
+              "title": "Clean Architecture",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "software-dev-ressources",
+              "navExclude": false,
+              "children": [
+                {
+                  "key": "v1bv9id03j7m1nihojq3vsg",
+                  "title": "How do you structure your Go Apps",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "software-dev-ressources",
+                  "navExclude": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "98t3homhork6ljyuzhpzh39",
+              "title": "Software Architecture vs. Code",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "software-dev-ressources",
+              "navExclude": false,
+              "children": []
+            },
+            {
+              "key": "7aaw3en9k0g13xq3mmtzn6c",
+              "title": "Why Architecture Comes before Coding",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "software-dev-ressources",
+              "navExclude": false,
+              "children": []
+            },
+            {
+              "key": "8iaf1uv531dkucdzn6nmrtw",
+              "title": "arc42",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "software-dev-ressources",
+              "navExclude": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "yqr48uszqjtjv25z2yp1tda",
+          "title": "CI/CD",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "software-dev-ressources",
+          "navExclude": false,
+          "children": []
+        },
+        {
+          "key": "suojggnw09bw5ak26niqfxx",
+          "title": "DORA metrics",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "software-dev-ressources",
+          "navExclude": false,
+          "children": []
+        },
+        {
+          "key": "kc36haops8nyqjb9tq3fe82",
+          "title": "Languages",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "software-dev-ressources",
+          "navExclude": false,
+          "children": [
+            {
+              "key": "flz3kmt6kiyv3cjxapamuiq",
+              "title": "Python",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "software-dev-ressources",
+              "navExclude": false,
+              "children": [
+                {
+                  "key": "8n0qz0x53cp2ka0nz7b174d",
+                  "title": "Package Managers",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "software-dev-ressources",
+                  "navExclude": false,
+                  "children": []
+                },
+                {
+                  "key": "oj35g7khjqecq3yvlntq9fs",
+                  "title": "Why you should use `python -m pip`",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "software-dev-ressources",
+                  "navExclude": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "66ypdksmsqlsebofipbuyay",
+              "title": "Rust",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "software-dev-ressources",
+              "navExclude": false,
+              "children": [
+                {
+                  "key": "2z9akjjnly8kksdwnfc4scp",
+                  "title": "Integers",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "software-dev-ressources",
+                  "navExclude": false,
+                  "children": []
+                },
+                {
+                  "key": "ng82ko3qadg1h1w4yo6tt7q",
+                  "title": "Property Based Testing in Rust with Arbitrary",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "software-dev-ressources",
+                  "navExclude": false,
+                  "children": []
+                },
+                {
+                  "key": "50pogelp1rmf716yk8ldncz",
+                  "title": "Rust vs C++ Compile Times",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "software-dev-ressources",
+                  "navExclude": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "crs8k3njhxvhu2ei4ftkt7x",
+          "title": "Modern Software Engineering",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "software-dev-ressources",
+          "navExclude": false,
+          "children": []
+        },
+        {
+          "key": "8pgbvyqqbuxr72euz88a4z1",
+          "title": "Paradigms",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "software-dev-ressources",
+          "navExclude": false,
+          "children": [
+            {
+              "key": "9emwdpkf9ta6dgrpdzk2z75",
+              "title": "Functional Programming",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "software-dev-ressources",
+              "navExclude": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "zhsasa7my0cp3larm30ghef",
+          "title": "TDD - Where Did It All Go Wrong?",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "software-dev-ressources",
+          "navExclude": false,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "403": null,
+    "73neeqm706h4yfbgcigd5bv": null,
+    "8pgbvyqqbuxr72euz88a4z1": "73neeqm706h4yfbgcigd5bv",
+    "9emwdpkf9ta6dgrpdzk2z75": "8pgbvyqqbuxr72euz88a4z1",
+    "kc36haops8nyqjb9tq3fe82": "73neeqm706h4yfbgcigd5bv",
+    "66ypdksmsqlsebofipbuyay": "kc36haops8nyqjb9tq3fe82",
+    "ng82ko3qadg1h1w4yo6tt7q": "66ypdksmsqlsebofipbuyay",
+    "2z9akjjnly8kksdwnfc4scp": "66ypdksmsqlsebofipbuyay",
+    "50pogelp1rmf716yk8ldncz": "66ypdksmsqlsebofipbuyay",
+    "flz3kmt6kiyv3cjxapamuiq": "kc36haops8nyqjb9tq3fe82",
+    "8n0qz0x53cp2ka0nz7b174d": "flz3kmt6kiyv3cjxapamuiq",
+    "oj35g7khjqecq3yvlntq9fs": "flz3kmt6kiyv3cjxapamuiq",
+    "zhsasa7my0cp3larm30ghef": "73neeqm706h4yfbgcigd5bv",
+    "crs8k3njhxvhu2ei4ftkt7x": "73neeqm706h4yfbgcigd5bv",
+    "suojggnw09bw5ak26niqfxx": "73neeqm706h4yfbgcigd5bv",
+    "yqr48uszqjtjv25z2yp1tda": "73neeqm706h4yfbgcigd5bv",
+    "zpnqg6bt1wcsuyx2moijqza": "73neeqm706h4yfbgcigd5bv",
+    "7aaw3en9k0g13xq3mmtzn6c": "zpnqg6bt1wcsuyx2moijqza",
+    "98t3homhork6ljyuzhpzh39": "zpnqg6bt1wcsuyx2moijqza",
+    "323zumeh4yfr8sfe98hxnmi": "zpnqg6bt1wcsuyx2moijqza",
+    "v1bv9id03j7m1nihojq3vsg": "323zumeh4yfr8sfe98hxnmi",
+    "8iaf1uv531dkucdzn6nmrtw": "zpnqg6bt1wcsuyx2moijqza"
+  }
+}

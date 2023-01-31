@@ -1,0 +1,149 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><link rel="icon" href="/software-dev-ressources/favicon.ico"/><title>Rust</title><meta name="robots" content="index,follow"/><meta name="googlebot" content="index,follow"/><meta name="description" content="Personal Knowledge Space"/><meta property="og:title" content="Rust"/><meta property="og:description" content="Personal Knowledge Space"/><meta property="og:url" content="https://realJohnDoe.github.io/software-dev-ressources/notes/66ypdksmsqlsebofipbuyay/"/><meta property="og:type" content="article"/><meta property="article:published_time" content="11/16/2022"/><meta property="article:modified_time" content="12/29/2022"/><link rel="canonical" href="https://realJohnDoe.github.io/software-dev-ressources/notes/66ypdksmsqlsebofipbuyay/"/><meta name="next-head-count" content="14"/><link rel="preload" href="/software-dev-ressources/_next/static/css/5dd8bcc3685052b5.css" as="style"/><link rel="stylesheet" href="/software-dev-ressources/_next/static/css/5dd8bcc3685052b5.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/software-dev-ressources/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/software-dev-ressources/_next/static/chunks/webpack-992ccadfb2aa503c.js" defer=""></script><script src="/software-dev-ressources/_next/static/chunks/framework-28c999baf2863c3d.js" defer=""></script><script src="/software-dev-ressources/_next/static/chunks/main-af176bf8c1823acd.js" defer=""></script><script src="/software-dev-ressources/_next/static/chunks/pages/_app-e6ab366996e62490.js" defer=""></script><script src="/software-dev-ressources/_next/static/chunks/935-4dee79e80b8641c6.js" defer=""></script><script src="/software-dev-ressources/_next/static/chunks/6-50972def09142ee2.js" defer=""></script><script src="/software-dev-ressources/_next/static/chunks/pages/notes/%5Bid%5D-78d472fa3b924116.js" defer=""></script><script src="/software-dev-ressources/_next/static/P2XDo-lsD3YqQa0IieWLo/_buildManifest.js" defer=""></script><script src="/software-dev-ressources/_next/static/P2XDo-lsD3YqQa0IieWLo/_ssgManifest.js" defer=""></script></head><body><div id="__next" data-reactroot=""><section class="ant-layout" style="width:100%;min-height:100%"><header class="ant-layout-header" style="position:fixed;isolation:isolate;z-index:1;width:100%;border-bottom:1px solid #d4dadf;height:64px;padding:0 24px 0 2px"><div class="ant-row ant-row-center" style="max-width:992px;justify-content:space-between;margin:0 auto"><div style="display:flex" class="ant-col ant-col-xs-20 ant-col-sm-4"></div><div class="ant-col gutter-row ant-col-xs-0 ant-col-sm-20 ant-col-md-20 ant-col-lg-19"><div class="ant-select ant-select-lg ant-select-auto-complete ant-select-single ant-select-allow-clear ant-select-show-search" style="width:100%"><div class="ant-select-selector"><span class="ant-select-selection-search"><input type="search" autoComplete="off" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="undefined_list" aria-autocomplete="list" aria-controls="undefined_list" aria-activedescendant="undefined_list_0" value=""/></span><span class="ant-select-selection-placeholder">For full text search please use the &#x27;?&#x27; prefix. e.g. ? Onboarding</span></div></div></div><div style="display:none;align-items:center;justify-content:center" class="ant-col ant-col-xs-4 ant-col-sm-4 ant-col-md-0 ant-col-lg-0"><span role="img" aria-label="menu" style="font-size:24px" tabindex="-1" class="anticon anticon-menu"><svg viewBox="64 64 896 896" focusable="false" data-icon="menu" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg></span></div></div></header><section class="ant-layout" style="margin-top:64px;display:flex;flex-direction:row"><div class="site-layout-sidebar" style="flex:0 0 auto;width:calc(max((100% - 992px) / 2, 0px) + 200px);min-width:200px;padding-left:calc((100% - 992px) / 2)"><aside class="ant-layout-sider ant-layout-sider-dark" style="position:fixed;overflow:auto;height:calc(100vh - 64px);background-color:transparent;flex:0 0 200px;max-width:200px;min-width:200px;width:200px"><div class="ant-layout-sider-children"></div></aside></div><main class="ant-layout-content side-layout-main" style="max-width:1200px;min-width:0;display:block"><div style="padding:0 24px"><div class="main-content" role="main"><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-row" style="margin-left:-10px;margin-right:-10px"><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-24 ant-col-md-18"><div><h1 id="rust"><a aria-hidden="true" class="anchor-heading icon-link" href="#rust"></a>Rust</h1>
+<ul>
+<li>
+<p><code>to_owned</code>: goes from borrowed to owned, usually by implementing the clone
+trait.</p>
+</li>
+<li>
+<p>The difference between arrays and slices is that arrays have a fixed size
+and are denoted with <code>[T, n]</code> or <code>&#x26;[T, n]</code> while slices have a variable
+size and are denoted with <code>[T]</code> or <code>&#x26;[T]</code>.</p>
+</li>
+<li>
+<p>Slices</p>
+<ul>
+<li>
+<p>have a <code>.windows(n)</code> method that returns all possible windows of length
+<code>n</code> for that slice.</p>
+</li>
+<li>
+<p>have a <code>.any(predicate) bool</code> method that returns true if any of the
+contained ites evaluates true under the predicate.</p>
+</li>
+<li>
+<p>have a <code>.len()</code> and a <code>.is_empty()</code> method.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Lambdas can be defined with a <code>|x, y| x*y</code> syntax.</p>
+</li>
+<li>
+<p><code>match</code> can receive mutliple values, like</p>
+<pre class="language-rust"><code class="language-rust"><span class="token keyword">match</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">false</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token punctuation">...</span>
+<span class="token punctuation">}</span>`
+</code></pre>
+</li>
+<li>
+<p>We can use <code>||</code> syntax to return a first simple expression and forward to a
+more complex expression in case the first one is false.</p>
+</li>
+<li>
+<p>The crate <code>int_enum</code> can be used to build integer-valued enums with the syntax</p>
+<pre class="language-rust"><code class="language-rust"><span class="token attribute attr-name">#[repr(usize)]</span>
+<span class="token attribute attr-name">#[derive(Clone, Copy, Debug, PartialEq, Eq, IntEnum)]</span>
+<span class="token keyword">enum</span> <span class="token type-definition class-name">Colors</span> <span class="token punctuation">{</span>
+  <span class="token class-name">Red</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token class-name">Blue</span> <span class="token operator">=</span> <span class="token number">2</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> red <span class="token operator">=</span> <span class="token class-name">Color</span><span class="token punctuation">::</span><span class="token function">from_int</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">expect</span><span class="token punctuation">(</span><span class="token string">"value out of range"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> int_value <span class="token operator">=</span> red<span class="token punctuation">.</span><span class="token function">int_value</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+</li>
+<li>
+<p>The crate <code>enum_iterator</code> can be used to iterate over enums.</p>
+</li>
+<li>
+<p><code>?</code> can be used to unwrap a result, only use it when it is ok and pass the
+error up otherwise.</p>
+</li>
+<li>
+<p><code>.expect()</code> can be used to reformat a Result or Optional</p>
+</li>
+<li>
+<p>Structs</p>
+<ul>
+<li>Struct construction is done via <code>Struct { member_1, member_2 }</code>.</li>
+<li>The class itself can be referenced in methods via <code>Self</code> while the instance
+can be accessed using <code>self</code></li>
+</ul>
+</li>
+<li>
+<p><code>Iterator</code> trait objects</p>
+<ul>
+<li>have a method <code>step_by</code> which allows to skip some items.</li>
+<li>have a method <code>filter_map</code> to do filtering and mapping in one go.</li>
+</ul>
+</li>
+<li>
+<p>We can use <code>|(a, _)| a % 2 == 0</code> syntax to combine pattern matching and a
+lambda function.</p>
+</li>
+<li>
+<p><code>map</code> can be used on <code>Option</code> to run function on the <code>Some</code> case</p>
+</li>
+<li>
+<p>bools can be converted to an <code>Option</code> by using <code>.then()</code> or <code>then_some()</code>.</p>
+</li>
+<li>
+<p>Traits can be combined with <code>+</code>.🤯</p>
+</li>
+<li>
+<p>The <code>std::cmp::Eq</code> trait and <code>std::hash::Hash</code> traits are required for HashMap
+keys.</p>
+</li>
+<li>
+<p>The <code>std::cmp::Ord</code> trait is required for comparing.</p>
+</li>
+<li>
+<p>HashMap entries</p>
+<ul>
+<li>can be set with <code>.insert()</code></li>
+<li>can be retrieved with <code>.get()</code> or</li>
+<li>modified with <code>.get_mut()</code>.</li>
+<li>can be modified in place with <code>.entry()</code></li>
+</ul>
+</li>
+<li>
+<p><code>Iter</code> vs <code>IntoIterator</code> traits :</p>
+<ul>
+<li><code>IntoIterator</code> is required for <code>for</code>-loops, but yields values, immutable
+references or mutable references depending on context.</li>
+<li><code>Iter</code> yields immutable references.</li>
+</ul>
+</li>
+<li>
+<p><code>map().all(|x| x)</code> can be simplified to <code>all()</code></p>
+</li>
+<li>
+<p><code>.unwrap_or</code> can be used on <code>Option</code> to easily define a default in the <code>None</code>
+case.</p>
+</li>
+<li>
+<p><code>vec![0; 5]</code> can be used to create a vector of five zeroes.</p>
+</li>
+<li>
+<p><code>vec![1, 2, 3]</code> will compile into a vector with elements 1, 2, and 3.</p>
+</li>
+<li>
+<p>Don't put a semicolon <code>;</code> at the end of lines if the value shall be returned.</p>
+</li>
+<li>
+<p><code>Vec</code> elements can be accessed and modified using square brackets <code>[]</code>.</p>
+</li>
+<li>
+<p>A range can be defined using <code>1..4</code>.
+The last value will not be included.</p>
+</li>
+</ul>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/software-dev-ressources/notes/2z9akjjnly8kksdwnfc4scp">Integers</a></li>
+<li><a href="/software-dev-ressources/notes/ng82ko3qadg1h1w4yo6tt7q">Property Based Testing in Rust with Arbitrary</a></li>
+<li><a href="/software-dev-ressources/notes/50pogelp1rmf716yk8ldncz">Rust vs C++ Compile Times</a></li>
+</ol></div></div><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-0 ant-col-md-6"><div><div class=""><div class="ant-anchor-wrapper dendron-toc" style="max-height:calc(100vh - 64px);z-index:1"><div class="ant-anchor"><div class="ant-anchor-ink"><span class="ant-anchor-ink-ball"></span></div></div></div></div></div></div></div></div></div></div></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><footer class="ant-layout-footer" style="padding:0 24px 24px"></footer></main></section></section></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"note":{"id":"66ypdksmsqlsebofipbuyay","title":"Rust","desc":"","updated":1672323752501,"created":1668609691418,"custom":{},"fname":"languages.rust","type":"note","vault":{"fsPath":".","selfContained":true,"name":"software-dev-ressources"},"contentHash":"e475723013424e6913746faf15e37062","links":[],"anchors":{},"children":["50pogelp1rmf716yk8ldncz","2z9akjjnly8kksdwnfc4scp","ng82ko3qadg1h1w4yo6tt7q"],"parent":"kc36haops8nyqjb9tq3fe82","data":{}},"body":"\u003ch1 id=\"rust\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#rust\"\u003e\u003c/a\u003eRust\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003eto_owned\u003c/code\u003e: goes from borrowed to owned, usually by implementing the clone\ntrait.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eThe difference between arrays and slices is that arrays have a fixed size\nand are denoted with \u003ccode\u003e[T, n]\u003c/code\u003e or \u003ccode\u003e\u0026#x26;[T, n]\u003c/code\u003e while slices have a variable\nsize and are denoted with \u003ccode\u003e[T]\u003c/code\u003e or \u003ccode\u003e\u0026#x26;[T]\u003c/code\u003e.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eSlices\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003ehave a \u003ccode\u003e.windows(n)\u003c/code\u003e method that returns all possible windows of length\n\u003ccode\u003en\u003c/code\u003e for that slice.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003ehave a \u003ccode\u003e.any(predicate) bool\u003c/code\u003e method that returns true if any of the\ncontained ites evaluates true under the predicate.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003ehave a \u003ccode\u003e.len()\u003c/code\u003e and a \u003ccode\u003e.is_empty()\u003c/code\u003e method.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eLambdas can be defined with a \u003ccode\u003e|x, y| x*y\u003c/code\u003e syntax.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003ematch\u003c/code\u003e can receive mutliple values, like\u003c/p\u003e\n\u003cpre class=\"language-rust\"\u003e\u003ccode class=\"language-rust\"\u003e\u003cspan class=\"token keyword\"\u003ematch\u003c/span\u003e \u003cspan class=\"token punctuation\"\u003e(\u003c/span\u003ea\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e b\u003cspan class=\"token punctuation\"\u003e)\u003c/span\u003e \u003cspan class=\"token punctuation\"\u003e{\u003c/span\u003e\n     \u003cspan class=\"token boolean\"\u003etrue\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e \u003cspan class=\"token boolean\"\u003efalse\u003c/span\u003e \u003cspan class=\"token operator\"\u003e=\u003e\u003c/span\u003e \u003cspan class=\"token punctuation\"\u003e{\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e}\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e\n     \u003cspan class=\"token punctuation\"\u003e...\u003c/span\u003e\n\u003cspan class=\"token punctuation\"\u003e}\u003c/span\u003e`\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eWe can use \u003ccode\u003e||\u003c/code\u003e syntax to return a first simple expression and forward to a\nmore complex expression in case the first one is false.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eThe crate \u003ccode\u003eint_enum\u003c/code\u003e can be used to build integer-valued enums with the syntax\u003c/p\u003e\n\u003cpre class=\"language-rust\"\u003e\u003ccode class=\"language-rust\"\u003e\u003cspan class=\"token attribute attr-name\"\u003e#[repr(usize)]\u003c/span\u003e\n\u003cspan class=\"token attribute attr-name\"\u003e#[derive(Clone, Copy, Debug, PartialEq, Eq, IntEnum)]\u003c/span\u003e\n\u003cspan class=\"token keyword\"\u003eenum\u003c/span\u003e \u003cspan class=\"token type-definition class-name\"\u003eColors\u003c/span\u003e \u003cspan class=\"token punctuation\"\u003e{\u003c/span\u003e\n  \u003cspan class=\"token class-name\"\u003eRed\u003c/span\u003e \u003cspan class=\"token operator\"\u003e=\u003c/span\u003e \u003cspan class=\"token number\"\u003e1\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e,\u003c/span\u003e\n  \u003cspan class=\"token class-name\"\u003eBlue\u003c/span\u003e \u003cspan class=\"token operator\"\u003e=\u003c/span\u003e \u003cspan class=\"token number\"\u003e2\u003c/span\u003e\n\u003cspan class=\"token punctuation\"\u003e}\u003c/span\u003e\n\n\u003cspan class=\"token keyword\"\u003elet\u003c/span\u003e red \u003cspan class=\"token operator\"\u003e=\u003c/span\u003e \u003cspan class=\"token class-name\"\u003eColor\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e::\u003c/span\u003e\u003cspan class=\"token function\"\u003efrom_int\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e(\u003c/span\u003e\u003cspan class=\"token number\"\u003e1\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e)\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e.\u003c/span\u003e\u003cspan class=\"token function\"\u003eexpect\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e(\u003c/span\u003e\u003cspan class=\"token string\"\u003e\"value out of range\"\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e)\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e;\u003c/span\u003e\n\u003cspan class=\"token keyword\"\u003elet\u003c/span\u003e int_value \u003cspan class=\"token operator\"\u003e=\u003c/span\u003e red\u003cspan class=\"token punctuation\"\u003e.\u003c/span\u003e\u003cspan class=\"token function\"\u003eint_value\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e(\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e)\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e;\u003c/span\u003e\n\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eThe crate \u003ccode\u003eenum_iterator\u003c/code\u003e can be used to iterate over enums.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003e?\u003c/code\u003e can be used to unwrap a result, only use it when it is ok and pass the\nerror up otherwise.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003e.expect()\u003c/code\u003e can be used to reformat a Result or Optional\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eStructs\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eStruct construction is done via \u003ccode\u003eStruct { member_1, member_2 }\u003c/code\u003e.\u003c/li\u003e\n\u003cli\u003eThe class itself can be referenced in methods via \u003ccode\u003eSelf\u003c/code\u003e while the instance\ncan be accessed using \u003ccode\u003eself\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003eIterator\u003c/code\u003e trait objects\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ehave a method \u003ccode\u003estep_by\u003c/code\u003e which allows to skip some items.\u003c/li\u003e\n\u003cli\u003ehave a method \u003ccode\u003efilter_map\u003c/code\u003e to do filtering and mapping in one go.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eWe can use \u003ccode\u003e|(a, _)| a % 2 == 0\u003c/code\u003e syntax to combine pattern matching and a\nlambda function.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003emap\u003c/code\u003e can be used on \u003ccode\u003eOption\u003c/code\u003e to run function on the \u003ccode\u003eSome\u003c/code\u003e case\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003ebools can be converted to an \u003ccode\u003eOption\u003c/code\u003e by using \u003ccode\u003e.then()\u003c/code\u003e or \u003ccode\u003ethen_some()\u003c/code\u003e.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eTraits can be combined with \u003ccode\u003e+\u003c/code\u003e.🤯\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eThe \u003ccode\u003estd::cmp::Eq\u003c/code\u003e trait and \u003ccode\u003estd::hash::Hash\u003c/code\u003e traits are required for HashMap\nkeys.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eThe \u003ccode\u003estd::cmp::Ord\u003c/code\u003e trait is required for comparing.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eHashMap entries\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ecan be set with \u003ccode\u003e.insert()\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003ecan be retrieved with \u003ccode\u003e.get()\u003c/code\u003e or\u003c/li\u003e\n\u003cli\u003emodified with \u003ccode\u003e.get_mut()\u003c/code\u003e.\u003c/li\u003e\n\u003cli\u003ecan be modified in place with \u003ccode\u003e.entry()\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003eIter\u003c/code\u003e vs \u003ccode\u003eIntoIterator\u003c/code\u003e traits :\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eIntoIterator\u003c/code\u003e is required for \u003ccode\u003efor\u003c/code\u003e-loops, but yields values, immutable\nreferences or mutable references depending on context.\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003eIter\u003c/code\u003e yields immutable references.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003emap().all(|x| x)\u003c/code\u003e can be simplified to \u003ccode\u003eall()\u003c/code\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003e.unwrap_or\u003c/code\u003e can be used on \u003ccode\u003eOption\u003c/code\u003e to easily define a default in the \u003ccode\u003eNone\u003c/code\u003e\ncase.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003evec![0; 5]\u003c/code\u003e can be used to create a vector of five zeroes.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003evec![1, 2, 3]\u003c/code\u003e will compile into a vector with elements 1, 2, and 3.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eDon't put a semicolon \u003ccode\u003e;\u003c/code\u003e at the end of lines if the value shall be returned.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003eVec\u003c/code\u003e elements can be accessed and modified using square brackets \u003ccode\u003e[]\u003c/code\u003e.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eA range can be defined using \u003ccode\u003e1..4\u003c/code\u003e.\nThe last value will not be included.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003cstrong\u003eChildren\u003c/strong\u003e\n\u003col\u003e\n\u003cli\u003e\u003ca href=\"/software-dev-ressources/notes/2z9akjjnly8kksdwnfc4scp\"\u003eIntegers\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/software-dev-ressources/notes/ng82ko3qadg1h1w4yo6tt7q\"\u003eProperty Based Testing in Rust with Arbitrary\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/software-dev-ressources/notes/50pogelp1rmf716yk8ldncz\"\u003eRust vs C++ Compile Times\u003c/a\u003e\u003c/li\u003e\n\u003c/ol\u003e","noteIndex":{"id":"73neeqm706h4yfbgcigd5bv","title":"Software Development Ressources","desc":"","updated":1674162443326,"created":1673459298905,"custom":{"nav_order":0,"permalink":"/"},"fname":"root","type":"note","vault":{"fsPath":".","selfContained":true,"name":"software-dev-ressources"},"contentHash":"0667b5935bbde8dd7f0512eccafb0087","links":[],"anchors":{"welcome-to-my-notes-on-software-development":{"type":"header","text":"Welcome to my Notes on Software Development","value":"welcome-to-my-notes-on-software-development","line":8,"column":0,"depth":2}},"children":["zpnqg6bt1wcsuyx2moijqza","yqr48uszqjtjv25z2yp1tda","suojggnw09bw5ak26niqfxx","crs8k3njhxvhu2ei4ftkt7x","zhsasa7my0cp3larm30ghef","kc36haops8nyqjb9tq3fe82","8pgbvyqqbuxr72euz88a4z1"],"parent":null,"data":{},"body":"\n## Welcome to my Notes on Software Development\n\nI am collecting some notes and ressources on different software development topics, sometimes with a summary.\n\nIf you have feedback, [let me know](https://github.com/realJohnDoe/software-dev-ressources/issues/new/choose)!🙂\n"},"collectionChildren":null,"customHeadContent":null,"config":{"version":5,"dev":{"enablePreviewV2":true,"enableSelfContainedVaults":true},"commands":{"lookup":{"note":{"selectionMode":"extract","confirmVaultOnCreate":true,"vaultSelectionModeOnCreate":"smart","leaveTrace":false,"bubbleUpCreateNew":true,"fuzzThreshold":0.2}},"randomNote":{},"insertNoteLink":{"aliasMode":"none","enableMultiSelect":false},"insertNoteIndex":{"enableMarker":false},"copyNoteLink":{"aliasMode":"title"},"templateHierarchy":"template"},"workspace":{"vaults":[{"fsPath":".","selfContained":true,"name":"software-dev-ressources"}],"journal":{"dailyDomain":"daily","name":"journal","dateFormat":"y.MM.dd","addBehavior":"childOfDomain"},"scratch":{"name":"scratch","dateFormat":"y.MM.dd.HHmmss","addBehavior":"asOwnDomain"},"task":{"name":"task","dateFormat":"y.MM.dd","addBehavior":"asOwnDomain","statusSymbols":{"":" ","wip":"w","done":"x","assigned":"a","moved":"m","blocked":"b","delegated":"l","dropped":"d","pending":"y"},"taskCompleteStatus":["done","x"],"prioritySymbols":{"H":"high","M":"medium","L":"low"},"todoIntegration":false,"createTaskSelectionType":"selection2link"},"graph":{"zoomSpeed":1,"createStub":false},"enableAutoCreateOnDefinition":false,"enableXVaultWikiLink":false,"enableRemoteVaultInit":true,"enableUserTags":true,"enableHashTags":true,"workspaceVaultSyncMode":"noCommit","enableAutoFoldFrontmatter":false,"enableEditorDecorations":true,"maxPreviewsCached":10,"maxNoteLength":204800,"enableFullHierarchyNoteTitle":false,"enableHandlebarTemplates":true,"enableSmartRefs":false},"preview":{"enableFMTitle":true,"enableNoteTitleForLink":true,"enableFrontmatterTags":true,"enableHashesForFMTags":false,"enablePrettyRefs":true,"enableKatex":true,"automaticallyShowPreview":false,"enableMermaid":true},"publishing":{"enableFMTitle":true,"enableNoteTitleForLink":true,"enablePrettyRefs":true,"enableKatex":true,"copyAssets":true,"siteHierarchies":["root"],"writeStubs":false,"siteRootDir":"docs","seo":{"title":"Dendron","description":"Personal Knowledge Space"},"github":{"enableEditLink":true,"editLinkText":"Edit this page on GitHub","editBranch":"main","editViewMode":"tree"},"enableSiteLastModified":true,"enableFrontmatterTags":true,"enableHashesForFMTags":false,"enableRandomlyColoredTags":true,"enableTaskNotes":true,"enablePrettyLinks":true,"searchMode":"search","siteUrl":"https://realJohnDoe.github.io","assetsPrefix":"/software-dev-ressources","enableMermaid":true,"siteFaviconPath":"favicon.ico","siteIndex":"root"}}},"__N_SSG":true},"page":"/notes/[id]","query":{"id":"66ypdksmsqlsebofipbuyay"},"buildId":"P2XDo-lsD3YqQa0IieWLo","assetPrefix":"/software-dev-ressources","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

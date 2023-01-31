@@ -1,0 +1,149 @@
+<h1 id="rust"><a aria-hidden="true" class="anchor-heading icon-link" href="#rust"></a>Rust</h1>
+<ul>
+<li>
+<p><code>to_owned</code>: goes from borrowed to owned, usually by implementing the clone
+trait.</p>
+</li>
+<li>
+<p>The difference between arrays and slices is that arrays have a fixed size
+and are denoted with <code>[T, n]</code> or <code>&#x26;[T, n]</code> while slices have a variable
+size and are denoted with <code>[T]</code> or <code>&#x26;[T]</code>.</p>
+</li>
+<li>
+<p>Slices</p>
+<ul>
+<li>
+<p>have a <code>.windows(n)</code> method that returns all possible windows of length
+<code>n</code> for that slice.</p>
+</li>
+<li>
+<p>have a <code>.any(predicate) bool</code> method that returns true if any of the
+contained ites evaluates true under the predicate.</p>
+</li>
+<li>
+<p>have a <code>.len()</code> and a <code>.is_empty()</code> method.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Lambdas can be defined with a <code>|x, y| x*y</code> syntax.</p>
+</li>
+<li>
+<p><code>match</code> can receive mutliple values, like</p>
+<pre class="language-rust"><code class="language-rust"><span class="token keyword">match</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">false</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token punctuation">...</span>
+<span class="token punctuation">}</span>`
+</code></pre>
+</li>
+<li>
+<p>We can use <code>||</code> syntax to return a first simple expression and forward to a
+more complex expression in case the first one is false.</p>
+</li>
+<li>
+<p>The crate <code>int_enum</code> can be used to build integer-valued enums with the syntax</p>
+<pre class="language-rust"><code class="language-rust"><span class="token attribute attr-name">#[repr(usize)]</span>
+<span class="token attribute attr-name">#[derive(Clone, Copy, Debug, PartialEq, Eq, IntEnum)]</span>
+<span class="token keyword">enum</span> <span class="token type-definition class-name">Colors</span> <span class="token punctuation">{</span>
+  <span class="token class-name">Red</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token class-name">Blue</span> <span class="token operator">=</span> <span class="token number">2</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> red <span class="token operator">=</span> <span class="token class-name">Color</span><span class="token punctuation">::</span><span class="token function">from_int</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">expect</span><span class="token punctuation">(</span><span class="token string">"value out of range"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> int_value <span class="token operator">=</span> red<span class="token punctuation">.</span><span class="token function">int_value</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+</li>
+<li>
+<p>The crate <code>enum_iterator</code> can be used to iterate over enums.</p>
+</li>
+<li>
+<p><code>?</code> can be used to unwrap a result, only use it when it is ok and pass the
+error up otherwise.</p>
+</li>
+<li>
+<p><code>.expect()</code> can be used to reformat a Result or Optional</p>
+</li>
+<li>
+<p>Structs</p>
+<ul>
+<li>Struct construction is done via <code>Struct { member_1, member_2 }</code>.</li>
+<li>The class itself can be referenced in methods via <code>Self</code> while the instance
+can be accessed using <code>self</code></li>
+</ul>
+</li>
+<li>
+<p><code>Iterator</code> trait objects</p>
+<ul>
+<li>have a method <code>step_by</code> which allows to skip some items.</li>
+<li>have a method <code>filter_map</code> to do filtering and mapping in one go.</li>
+</ul>
+</li>
+<li>
+<p>We can use <code>|(a, _)| a % 2 == 0</code> syntax to combine pattern matching and a
+lambda function.</p>
+</li>
+<li>
+<p><code>map</code> can be used on <code>Option</code> to run function on the <code>Some</code> case</p>
+</li>
+<li>
+<p>bools can be converted to an <code>Option</code> by using <code>.then()</code> or <code>then_some()</code>.</p>
+</li>
+<li>
+<p>Traits can be combined with <code>+</code>.🤯</p>
+</li>
+<li>
+<p>The <code>std::cmp::Eq</code> trait and <code>std::hash::Hash</code> traits are required for HashMap
+keys.</p>
+</li>
+<li>
+<p>The <code>std::cmp::Ord</code> trait is required for comparing.</p>
+</li>
+<li>
+<p>HashMap entries</p>
+<ul>
+<li>can be set with <code>.insert()</code></li>
+<li>can be retrieved with <code>.get()</code> or</li>
+<li>modified with <code>.get_mut()</code>.</li>
+<li>can be modified in place with <code>.entry()</code></li>
+</ul>
+</li>
+<li>
+<p><code>Iter</code> vs <code>IntoIterator</code> traits :</p>
+<ul>
+<li><code>IntoIterator</code> is required for <code>for</code>-loops, but yields values, immutable
+references or mutable references depending on context.</li>
+<li><code>Iter</code> yields immutable references.</li>
+</ul>
+</li>
+<li>
+<p><code>map().all(|x| x)</code> can be simplified to <code>all()</code></p>
+</li>
+<li>
+<p><code>.unwrap_or</code> can be used on <code>Option</code> to easily define a default in the <code>None</code>
+case.</p>
+</li>
+<li>
+<p><code>vec![0; 5]</code> can be used to create a vector of five zeroes.</p>
+</li>
+<li>
+<p><code>vec![1, 2, 3]</code> will compile into a vector with elements 1, 2, and 3.</p>
+</li>
+<li>
+<p>Don't put a semicolon <code>;</code> at the end of lines if the value shall be returned.</p>
+</li>
+<li>
+<p><code>Vec</code> elements can be accessed and modified using square brackets <code>[]</code>.</p>
+</li>
+<li>
+<p>A range can be defined using <code>1..4</code>.
+The last value will not be included.</p>
+</li>
+</ul>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/software-dev-ressources/notes/2z9akjjnly8kksdwnfc4scp">Integers</a></li>
+<li><a href="/software-dev-ressources/notes/ng82ko3qadg1h1w4yo6tt7q">Property Based Testing in Rust with Arbitrary</a></li>
+<li><a href="/software-dev-ressources/notes/50pogelp1rmf716yk8ldncz">Rust vs C++ Compile Times</a></li>
+</ol>
