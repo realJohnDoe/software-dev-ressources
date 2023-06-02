@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "software-dev-ressources"
+version = "0.1.0"
+description = ""
+authors = ["Johannes Doellinger <johannes.doellinger@gmail.com>"]
+readme = "README.md"
+packages = [{include = "software_dev_ressources"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs-material = "^9.1.15"
+mkdocs-roamlinks-plugin = "^0.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
